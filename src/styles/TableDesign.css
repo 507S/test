@@ -1,0 +1,87 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  height: auto;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  font-size: small;
+  color: black;
+  min-width: 100px;
+  text-align: left;
+
+}
+.custom-table th {
+  border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+ 
+}
+
+.custom-table td {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+ 
+}
+
+.sticky-cell {
+  position:sticky;
+  left: 0;
+  z-index: 1;
+  border: none;
+  white-space: nowrap;
+  min-width: auto;
+  background: white;
+  text-align: left;
+  
+}
+
+.sticky-cell::before {
+  content: " ";
+  display: block;
+  /* border: 2px 2px 2px 2px solid #ddd; */
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  backface-visibility: hidden;
+ 
+  
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.bulk-edit-button-container {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.bulk-edit-button {
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  float: right;
+
+}
+
+.header-row {
+  position: relative;
+  z-index: 1000;
+  background: white;
+
+}
+.scrollable {
+  overflow-x: auto;
+}
+
